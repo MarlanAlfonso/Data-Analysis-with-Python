@@ -2,7 +2,7 @@
 
 ### Issued by freeCodeCamp · April 2026
 
-[View Credential](https://www.freecodecamp.org/certification/marlanalfonso/data-analysis-with-python-v7)
+![Image](assets/Certificate.png)
 
 ---
 
@@ -47,14 +47,3 @@ This certification validates practical skills in Python-based data analysis — 
 | Medical Data Visualizer | Produces a categorical bar chart and correlation heatmap from 70,000 patient medical examination records | [Repo](https://github.com/MarlanAlfonso/boilerplate-medical-data-visualizer) |
 | Page View Time Series Visualizer | Visualizes freeCodeCamp forum traffic trends using line, bar, and box plots | [Repo](https://github.com/MarlanAlfonso/boilerplate-page-view-time-series-visualizer) |
 | Sea Level Predictor | Fits two linear regression models to EPA sea level data and predicts rise through 2050 | [Repo](https://github.com/MarlanAlfonso/boilerplate-sea-level-predictor) |
-
----
-
-## About Me
-
-| | |
-|---|---|
-| **Name** | Marlan Alfonso |
-| **GitHub** | [github.com/MarlanAlfonso](https://github.com/MarlanAlfonso) |
-| **Portfolio Repository** | [DATA-ANALYSIS-WITH-PYTHON](https://github.com/MarlanAlfonso/DATA-ANALYSIS-WITH-PYTHON) |
-| **Certification** | [View on freeCodeCamp](https://www.freecodecamp.org/certification/marlanalfonso/data-analysis-with-python-v7) |
