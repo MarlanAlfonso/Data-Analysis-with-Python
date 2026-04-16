@@ -72,13 +72,3 @@ DATA-ANALYSIS-WITH-PYTHON/
 │
 └── README.md
 ```
-
----
-
-## About
-
-| | |
-|---|---|
-| **Name** | Marlan Alfonso |
-| **GitHub** | [github.com/MarlanAlfonso](https://github.com/MarlanAlfonso) |
-| **Certification** | [freeCodeCamp Data Analysis with Python](https://www.freecodecamp.org/learn/data-analysis-with-python) |
