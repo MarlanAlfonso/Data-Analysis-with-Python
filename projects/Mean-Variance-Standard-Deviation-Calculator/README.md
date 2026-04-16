@@ -1,11 +1,9 @@
 # Mean-Variance-Standard Deviation Calculator
-
 > A Python function that computes descriptive statistics on a 3x3 matrix — built as Project 1 of the freeCodeCamp Data Analysis with Python.
 
 ---
 
 ## Overview (Situation)
-
 **Context:** 
 - Descriptive statistics — mean, variance, standard deviation, min, max, and sum are the foundation of every data analysis workflow. Understanding how these metrics behave across different axes of a matrix is essential before working with larger datasets using libraries like Pandas and NumPy.
 
@@ -14,34 +12,21 @@
 
 ---
 
-## What I Built (Action)
+## What I Built 
 
 ### Key Features
-
 - **Input validation** — raises a `ValueError` with a descriptive message if the input list contains fewer than 9 elements, preventing silent failures downstream
 - **Matrix reshaping** — converts a 1D list into a 3x3 NumPy array using `reshape(3, 3)`, enabling axis-based operations
 - **Axis-aware statistics** — computes every metric along `axis=0` (column-wise), `axis=1` (row-wise), and on the flattened array, returning all results in one structured dictionary
 - **Clean output format** — all NumPy arrays are converted to plain Python lists using `.tolist()` so the output is JSON-serializable and test-compatible
 
-### Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Language | Python 3 |
-| Numerical Computing | NumPy |
-| Testing | unittest (freeCodeCamp test suite) |
-| Environment | GitHub Codespaces |
-
 ### Challenges Solved
-
-**Axis confusion — column-wise vs. row-wise:** NumPy's `axis` parameter is counterintuitive at first. `axis=0` collapses rows and produces one value per column, while `axis=1` collapses columns and produces one value per row. I resolved this by mentally modeling the axis as "the dimension that disappears" and verifying each result against the expected output manually before running the test suite.
-
-**Output type mismatch — NumPy arrays vs. Python lists:** NumPy statistical functions return `ndarray` objects, not plain Python lists. The unit tests expected native Python types, so every result required `.tolist()` to convert — including scalar values returned from the flattened computation.
+- **Axis confusion — column-wise vs. row-wise:** NumPy's `axis` parameter is counterintuitive at first. `axis=0` collapses rows and produces one value per column, while `axis=1` collapses columns and produces one value per row. I resolved this by mentally modeling the axis as "the dimension that disappears" and verifying each result against the expected output manually before running the test suite.
+- **Output type mismatch — NumPy arrays vs. Python lists:** NumPy statistical functions return `ndarray` objects, not plain Python lists. The unit tests expected native Python types, so every result required `.tolist()` to convert — including scalar values returned from the flattened computation.
 
 ---
 
 ## Results and Impact
-
 - All 3 unit tests passing with 0 errors
 - Function handles both valid input and edge cases (under-length lists) correctly
 - Output matches the exact format specified by freeCodeCamp across all 6 statistical measures and 3 axis configurations
@@ -74,7 +59,6 @@ python3 main.py
 ---
 
 ## What I Learned
-
 - Understood how NumPy's `axis` parameter controls the direction of statistical operations — `axis=0` for column-wise, `axis=1` for row-wise, and no axis for the full array
 - Learned that `reshape()` requires the total element count to stay constant — reshaping 9 elements into anything other than a 1x9, 3x3, or 9x1 matrix raises an error
 - Gained hands-on experience with NumPy's core statistical functions: `np.mean()`, `np.var()`, `np.std()`, `np.max()`, `np.min()`, `np.sum()`
